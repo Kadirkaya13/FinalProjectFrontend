@@ -17,7 +17,6 @@ export class ProductComponent implements OnInit {
   product5: any = { productId: 5, productName: 'Camera', categoryId: 1, unitPrice: 5 };
 
   products:Product[] = [];
-  
   constructor() { }
 
   ngOnInit(): void {
