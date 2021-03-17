@@ -18,7 +18,6 @@ export class CategoryComponent implements OnInit {
   ngOnInit(): void {
     this.getCategories();
   }
-
   getCategories() {
     this.categoryService.getCategories().subscribe(response=>{
       this.categories = response.data
@@ -35,5 +34,4 @@ export class CategoryComponent implements OnInit {
       return "list-group-item";
     }
   }
-
 }
